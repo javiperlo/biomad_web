@@ -308,6 +308,7 @@ img{
     padding: 0 1.5rem;
 }
 
+
 /*========== FOOTER ==========*/
 .footer__container{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
