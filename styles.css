@@ -439,6 +439,15 @@ img{
     }
 }
 
+#menu-icon {
+    display: block;
+}
+
+#close-icon {
+    display: none;
+    font-size: 35px; /* Cambia el tamaño del icono según lo necesites */
+}
+
 @media screen and (min-width: 960px){
 	.bd-container{
 		margin-left: auto;

@@ -43,3 +43,21 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 50
 })
+
+/* Cerramos y abrimos el menu*/
+
+const menuToggle = document.getElementById('nav-toggle');
+const menuIcon = document.getElementById('menu-icon');
+const closeIcon = document.getElementById('close-icon');
+
+menuToggle.addEventListener('click', function() {
+    const navMenu = document.getElementById('nav-menu');
+    if (navMenu.classList.contains('active')) {
+        menuIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+    } else {
+        menuIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+    }
+    navMenu.classList.toggle('active'); // toggle the 'active' class
+});
