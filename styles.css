@@ -167,27 +167,27 @@ img{
     height: 8%;  
   }
 
-/*=== AQUÍ ADAPTO A MOVIL, CAMBIO IMAGEN DEL BANNER*/
+/*Dispositivos moviles estandar*/
 @media screen and (max-width: 768px){
     .nav__menu{
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding: 1.5rem 0 1rem;
-    text-align: center;
-    background-color: rgba(0,0,0,.8);
-    box-shadow: 0 4px 4px rgba(0,0,0,.2);
-    border-radius: 0 0 1rem 1rem;
-    z-index: -1000;
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		padding: 1.5rem 0 1rem;
+		text-align: center;
+		background-color: rgba(0,0,0,.8);
+		box-shadow: 0 4px 4px rgba(0,0,0,.2);
+		border-radius: 0 0 1rem 1rem;
+		z-index: -1000;
     }
     .banner{
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    background: url(../imgs/slide_1_mobile.jpg);
-    background-size: cover;
-    background-position: center -50px; /* Ajuste para mover la imagen a la izquierda */
+		position: relative;
+		width: 100%;
+		height: 90vh;
+		background: url(../imgs/slide_1_mobile.jpg);
+		background-size: cover;
+		background-position: center -50px; /* Ajuste para mover la imagen a la izquierda */
     }
     .banner:after {
         content:""; 
@@ -197,7 +197,7 @@ img{
         right: 0;
         background: linear-gradient(to bottom, rgba(255,255,255,0) 15%,rgba(255,255,255,1) 100%);
         height: 15%;  
-      }
+    }
 }
 
 .nav__item{
@@ -228,7 +228,14 @@ img{
     color: var(--first-color);
 }
 
+#menu-icon {
+    display: block;
+}
 
+#close-icon {
+    display: none;
+    font-size: 35px; /* Cambia el tamaño del icono según lo necesites */
+}
 /*========== HOME ==========*/
 .home__container{
     height: calc(100vh - var(--header-height));
@@ -357,35 +364,56 @@ img{
 }
 
 /*========== MEDIA QUERIES ==========*/
-@media screen and (min-width: 576px){
+
+
+/*TABLETS*/
+@media screen and (min-width: 769px) and (max-width: 1024px){
     .home__container,
     .about__container,
     .app__container{
         grid-template-columns: repeat(2,1fr);
         align-items: center;
-}
+	}
 
     .about__data, .about__initial,
     .app__data, .app__initial,
     .contact__container, .contact__initial{
         text-align: initial;
-}
+	}
 
     .about__img, .app__img{
         width: 500px;
         order: -1;
-}
+	}
 
     .contact__container{
         grid-template-columns: 1.75fr 1fr;
         align-items: center;
-}
+	}
     .contact__button{
         justify-self: center;
-}
+	}
+	.banner{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		background: url(../imgs/slide_1_mobile.jpg);
+		background-size: cover;
+		background-position: center -300px; /* Ajuste para mover la imagen a la izquierda */
+		}
+	.banner:after {
+		content:""; 
+		position: absolute; 
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: linear-gradient(to bottom, rgba(255,255,255,0) 15%,rgba(255,255,255,1) 100%);
+		height: 15%;  
+	}
 }
 
-@media screen and (min-width: 768px){
+/*Ajustes generales*/
+@media screen and (min-width: 440px){
     body{
     	margin: 0;
     }
@@ -437,19 +465,7 @@ img{
     .app__store{
     	margin: 0 var(--mb-1) 0 0;
     }
-}
-
-#menu-icon {
-    display: block;
-}
-
-#close-icon {
-    display: none;
-    font-size: 35px; /* Cambia el tamaño del icono según lo necesites */
-}
-
-@media screen and (min-width: 960px){
-	.bd-container{
+		.bd-container{
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -463,6 +479,7 @@ img{
 		column-gap: 7rem;
 	}
 }
+
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
