@@ -289,6 +289,7 @@ img{
     max-width: 100%;
     background: #000;
     margin-top: var(--mb-2);
+    border-radius: 2rem 2rem 2rem 2rem;
 }
 
 .about__img video {
