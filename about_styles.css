@@ -1,0 +1,84 @@
+
+/* About Section */
+.about {
+  padding: 7rem 1rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+  color: #212121;
+}
+
+.about__description {
+  font-size: 0.9rem;
+  margin-bottom: 6rem; /* Aumenta el espacio entre el título y la descripción */
+  color: #666;
+}
+
+.about__team {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.team__member {
+  text-align: center;
+  flex: 1 1 30%;
+  max-width: 30%;
+}
+
+.member__image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.member__name {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.member__description {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.member__social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social__link {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .team__member {
+      flex: 1 1 45%;
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .team__member {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}

@@ -8,12 +8,12 @@
     /*========== Colors ==========*/
     --first-color: #32b173;
     --first-color-alt: #048654;
-    --title-color: #747474;
-    --text-color: #acacac;
+    --title-color: #d7d7d7;
+    --text-color: rgb(153, 153, 153);
     --text-color-light: #A6A6A6;
     --body-color: #FBFEFD;
     --container-color: #FFFFFF;
-    --color-titles: rgb(33, 33, 33);
+    --color-titles: #212121;
     --color-subtitles: rgb(87, 87, 87);
 
 /*========== Font and typography ==========*/
@@ -179,9 +179,10 @@ img{
 		width: 100%;
 		padding: 1.5rem 0 1rem;
 		text-align: center;
-		background-color: rgba(0,0,0,.8);
-		box-shadow: 0 4px 4px rgba(0,0,0,.2);
+		background-color: rgb(255, 255, 255, 0.97);
+		box-shadow: 0 4px 4px rgba(0,0,0,.4);
 		border-radius: 0 0 1rem 1rem;
+        font-size: small;
 		z-index: -1000;
     }
     .banner{
@@ -312,7 +313,7 @@ img{
 
 .nav__link, .nav__toggle{
     color: var(--text-color);
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-medium);
 }
 
 .nav__link:hover{
@@ -520,6 +521,54 @@ img{
     margin-bottom: 0; /* Elimina el margen inferior del texto */
 }
 
+/* IMPACTO DE NUESTRA SOLUCIÓN */
+/*
+.solution {
+    background-color: #ffffff;
+    padding: 4rem 1rem;
+}
+
+.solution__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.solution__title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2.5rem;
+}
+
+.solution__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.stat {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.stat__number {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.stat__description {
+    font-size: 1rem;
+    color: #666;
+}
+
+*/
 
 /*========== FOOTER ==========*/
 .footer__container {
@@ -765,7 +814,7 @@ img{
     /*Esto es para escritorio*/
 
     .our-solutions {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .why-choose-us {
