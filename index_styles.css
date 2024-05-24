@@ -102,7 +102,7 @@ img{
 
 .section-title{
 	font-size: var(--h3-font-size);
-    color: var(--title-color);
+    color: var(--color-subtitles);
     margin-bottom: var(--mb-3);
 }
 
@@ -440,7 +440,7 @@ img{
 
 .quehacemos__description {
     font-size: 1rem;
-    color: #474747;
+    color: var(--text-color);
 }
 
 /*========== WHY CHOOSE US ==========*/
@@ -680,11 +680,11 @@ img{
 	.banner{
 		position: relative;
 		width: 100%;
-		height: 100vh;
+		height: 90vh;
 		background: url(../imgs/slide_1_mobile.jpg);
 		background-size: cover;
 		background-position: center -300px; /* Ajuste para mover la imagen a la izquierda */
-		}
+	}
 	.banner:after {
 		content:""; 
 		position: absolute; 
