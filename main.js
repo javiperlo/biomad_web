@@ -28,21 +28,21 @@ window.addEventListener("scroll", function() {
 });
 
 /*==================== ANIMACION SCROLEAR (QUITAR SI NO GUSTA) ====================*/
-/*const sr = ScrollReveal({
+const sr = ScrollReveal({
     origin: 'top',
-    distance: '120px',
-    duration: 250,
+    distance: '100px',
+    duration: 300,
     reset: true
 });
 
-sr.reveal(`.home__data, .home__img,
-            .about__data, .about__img,
-            .services__content, .menu__content,
-            .app__data, .app__img,
-            .contact__data, .contact__button,
-            .footer__content`, {
-    interval: 50
-})*/
+sr.reveal(`.section-subtitle, .section-title,
+    .quehacemos__icon, .quehacemos__title, .quehacemos__description,
+    .stat__number, .stat__description,
+    .image-chooseus, .text h1, .sub-section h3, .sub-section p,
+    .image-solutions, .text h1, .sub-section h3, .sub-section p,
+    .contact__initial, .contact__description, .button`, {
+interval: 50
+});
 
 /* Cerramos y abrimos el menu*/
 
