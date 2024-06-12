@@ -40,25 +40,25 @@
                 </div>
                 
                 <div class="contact__form">
-                    <form action="send_email.php" method="post" class="form">
+                    <form action="https://formsubmit.co/7a2fd0a3320e6a65c73274ddef6981be" method="POST" class="form">
                         <div class="form__group">
                             <label for="name" class="form__label">Nombre</label>
-                            <input type="text" id="name" name="name" class="form__input" required>
+                            <input type="text" id="name" name="Nombre" class="form__input" required>
                         </div>
                         <div class="form__group">
                             <label for="email" class="form__label">Correo Electrónico</label>
-                            <input type="email" id="email" name="email" class="form__input" required>
+                            <input type="email" id="email" name="Correo Electrónico" class="form__input" required>
                         </div>
                         <div class="form__group">
                             <label for="subject" class="form__label">Asunto</label>
-                            <input type="text" id="subject" name="subject" class="form__input" required>
+                            <input type="text" id="subject" name="Asunto" class="form__input" required>
                         </div>
                         <div class="form__group">
                             <label for="message" class="form__label">Mensaje</label>
-                            <textarea id="message" name="message" class="form__textarea" required></textarea>
+                            <textarea id="message" name="Mensaje" class="form__textarea" required></textarea>
                         </div>
                         <!-- Campo oculto para el correo del destinatario -->
-                        <input type="hidden" name="recipient_email" value="info@biomad.com">
+                        <input type="hidden" name="_next" value="thanks.html"> <!-- Redireccionar a esta página después de enviar el formulario -->
                         <button type="submit" class="button">Enviar</button>
                     </form>
                 </div>
