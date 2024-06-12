@@ -28,7 +28,7 @@ window.addEventListener("scroll", function() {
 });
 
 /*==================== ANIMACION SCROLEAR (QUITAR SI NO GUSTA) ====================*/
-const sr = ScrollReveal({
+/*const sr = ScrollReveal({
     origin: 'top',
     distance: '100px',
     duration: 300,
@@ -42,7 +42,7 @@ sr.reveal(`.section-subtitle, .section-title,
     .image-solutions, .text h1, .sub-section h3, .sub-section p,
     .contact__initial, .contact__description, .button`, {
 interval: 50
-});
+});*/
 
 /* Cerramos y abrimos el menu*/
 

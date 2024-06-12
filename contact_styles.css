@@ -1,0 +1,86 @@
+.contact {
+    padding: 90px 20px;
+    margin-top: 50px; /* Ajusta este valor según sea necesario */
+}
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact__form {
+    width: 100%;
+    margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form__textarea {
+    resize: none;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 8px 16px; /* Reduce el padding para hacer el botón más pequeño */
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-align: center; /* Centra el texto horizontalmente */
+    width: fit-content; /* Hace que el ancho del botón se ajuste al contenido */
+    display: block; /* Para asegurar que el botón ocupa el ancho completo disponible */
+    margin: 0 auto; /* Centra el botón horizontalmente en su contenedor */
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.faq {
+    padding: 50px 20px;
+    margin-top: 0; /* Asegúrate de que no haya margen superior */
+}
+
+.faq__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq__item {
+    margin-bottom: 20px;
+}
+
+.faq__question {
+    font-weight: bold;
+    color: #333;
+}
+
+.faq__answer {
+    color: #787878;
+}
